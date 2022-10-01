@@ -111,7 +111,7 @@ const initializer = () => {
                         winCount += 1;
                         //if winCount equals word lenfth
                         if (winCount == charArray.length) {
-                            resultText.innerHTML = `<h2 class='win-msg'>(WIN !) Are लोडु Bach Gaya?(Thanku Bhai!)😉😍</h2><p>The word was: <span>${chosenWord}</span></p>`;
+                            resultText.innerHTML = `<h2 class='win-msg'>(WIN !) Are Bach Gaya?(Thanku Bhai!)😉😍</h2><p>The word was: <span>${chosenWord}</span></p>`;
                             //block all buttons
                             blocker();
                         }
