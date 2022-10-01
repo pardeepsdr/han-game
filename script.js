@@ -111,7 +111,7 @@ const initializer = () => {
                         winCount += 1;
                         //if winCount equals word lenfth
                         if (winCount == charArray.length) {
-                            resultText.innerHTML = `<h2 class='win-msg'>(WIN !) Are Bach Gaya?(Thanku Bhai!)😉😍</h2><p>The word was: <span>${chosenWord}</span></p>`;
+                            resultText.innerHTML = `<h2 class='win-msg'>(WIN !) Are Bach Gaya?(Thanku Bhai!)😉😍</h2><p>..the word was: <span>${chosenWord}</span></p>`;
                             //block all buttons
                             blocker();
                         }
@@ -124,7 +124,7 @@ const initializer = () => {
                 drawMan(count);
                 //Count==6 because head,body,left arm, right arm,left leg,right leg
                 if (count == 6) {
-                    resultText.innerHTML = `<h2 class='lose-msg'>(LOSE !) Marwa Dia B@#k!! 🤦🏼‍♂️🤦🏼‍♀️</h2><p>The word was: <span>${chosenWord}</span></p>`;
+                    resultText.innerHTML = `<h2 class='lose-msg'>Unfortunately you lost.😕🤦🏼‍♂️🤦🏼‍♀️</h2><p>...the word was: <span>${chosenWord}</span></p>`;
                     blocker();
                 }
             }
