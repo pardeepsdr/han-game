@@ -13,7 +13,7 @@ let options = {
         "Apple", "plum", 'banana', 'raspberry', 'jackfruit', 'papaya', 'kiwi', 'lime', 'lemon', 'apricot', 'grapefruit', 'melon', 'coconut', 'avocado', 'peach', 'orange', 'pear', 'cherry', 'strawberry', 'nectarine', 'grape', 'mango', "Blueberry", "Mandarin", "Pineapple",
         "Pomegranate", "Watermelon", 'kumquat', 'king coconut', 'kaffir lime', 'guava', 'fig', 'custard apple', 'hawthorn', 'hyuganatsu', 'cucumber', 'cherry', 'grape', 'green plum'],
 
-    Timepass: ["chut-ke-pissu", 'lakadbaggha', 'jhatu', 'lodu', 'gote', 'land-ke-tope', 'chakke', 'randibazz', 'bhadwa', 'hijda', 'tpa-tap', 'ghapa-ghap', 'jhat-ke-pakode', 'kutiya', 'sambhog', 'kamasutra', 'tapan', 'tadap', 'shighra-patan', 'hatiyaar', 'tisari-tang', 'hasta-methun', 'mastram', 'kutta', 'madarchod', 'bsdk', 'land-mera', 'muh-me-le-le', 'aulad', 'andkosh', 'bakland', 'chinaal', 'sambhoga', 'veeryapaat', 'auparishtak', 'shishnika', 'yoni-lehan', 'motu', 'gadha', 'kamini', 'sex', 'oyo', 'ghanghor', 'ramdev-baba', 'azzi-land-mera', 'hathi-mera-sathi', 'babu', 'sona', 'janu', 'darling', 'sexy', 'hot', 'mele-babu-ne-thana-thaya', 'alee-mela-bacha', 'baap'],
+    timepass: ["chut-ke-pissu", 'lakadbaggha', 'jhatu', 'lodu', 'gote', 'land-ke-tope', 'chakke', 'randibazz', 'bhadwa', 'hijda', 'tpa-tap', 'ghapa-ghap', 'jhat-ke-pakode', 'kutiya', 'sambhog', 'kamasutra', 'tapan', 'tadap', 'shighra-patan', 'hatiyaar', 'tisari-tang', 'hasta-methun', 'mastram', 'kutta', 'madarchod', 'bsdk', 'land-mera', 'muh-me-le-le', 'aulad', 'andkosh', 'bakland', 'chinaal', 'sambhoga', 'veeryapaat', 'auparishtak', 'shishnika', 'yoni-lehan', 'motu', 'gadha', 'kamini', 'sex', 'oyo', 'ghanghor', 'ramdev-baba', 'azzi-land-mera', 'hathi-mera-sathi', 'babu', 'sona', 'janu', 'darling', 'sexy', 'hot', 'mele-babu-ne-thana-thaya', 'alee-mela-bacha', 'baap'],
 
     countries: ["india", "pakistan", "acnada", "belgium", "france", "bangladesh", "bulgaria", "argentina", "denmark", "dominica", "cuba", "cyprus", "ecuador", "eritrea", "fiji", "france", "afghanistan", "american-samoa", "australia", "belgium", "china", "greece", "greenland", "iceland", "iran", "iraq", "ireland", "italy", "japan", "kazakhstan", "kuwait", "malawi", "malaysia", "maldives", "monaco", "monogolia", "morocco", "nepal", "namibia", "new-zealand", "niger", "norway", "oman", "peru", "poland", "panama", "philippines", "qatar", "romania", "south-africa", "spain", "sri-lanka", "sweden", "switzerland", "taiwan", "tajikistan", "tibet", "thailand", "turkey", "turkmenistan", "united-state", "ukraine", "uganda", "united-kingdom", "yemen"
     ],
@@ -111,7 +111,7 @@ const initializer = () => {
                         winCount += 1;
                         //if winCount equals word lenfth
                         if (winCount == charArray.length) {
-                            resultText.innerHTML = `<h2 class='win-msg'>Are लोडु Bach Gaya?(Thanku Bhai!)😉😍</h2><p>The word was: <span>${chosenWord}</span></p>`;
+                            resultText.innerHTML = `<h2 class='win-msg'>(WIN !) Are लोडु Bach Gaya?(Thanku Bhai!)😉😍</h2><p>The word was: <span>${chosenWord}</span></p>`;
                             //block all buttons
                             blocker();
                         }
@@ -124,7 +124,7 @@ const initializer = () => {
                 drawMan(count);
                 //Count==6 because head,body,left arm, right arm,left leg,right leg
                 if (count == 6) {
-                    resultText.innerHTML = `<h2 class='lose-msg'>Marwa Dia B@#k!! 🤦🏼‍♂️🤦🏼‍♀️</h2><p>The word was: <span>${chosenWord}</span></p>`;
+                    resultText.innerHTML = `<h2 class='lose-msg'>(LOSE !) Marwa Dia B@#k!! 🤦🏼‍♂️🤦🏼‍♀️</h2><p>The word was: <span>${chosenWord}</span></p>`;
                     blocker();
                 }
             }
